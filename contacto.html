@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <title>Germinados Alfagreen</title>
+  <script src="contacto.js" defer></script>
+  <script src="https://kit.fontawesome.com/083ef1f5f9.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_fz0Qj5FRPJhzsA3zG4pvW");
+    })();
+</script>
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="icon" href="imagenes/logo.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- H E A D E R -->
+<div class="header">
+  <img class="logo" src="imagenes/logo-alfagreen.gif" alt="logo Alfagreen">
+  <span class="nombre"> GERMINADOS ALFAGREEN</span>
+</div>
+    <div class="icon">
+    <a id="icon" href="https://www.facebook.com/germinadosAlfagreen" target="_blank" ><i class="fab fa-facebook" style="font-size:40px;"></i></a>
+</div>
+
+
+<!-- N A V I G A T I O N B A R -->
+<div class="navbar">
+  <a href="index.html" target="_self">Inicio</a>
+  <a href="productos.html" target="_self">Productos</a>
+  <a href="contacto.html" target="_self">Contacto</a>
+</div>
+
+<!-- C O N T E N I D O -->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card" style="text-align:center">
+	  <h3 style="text-align:center">Contáctanos:</h3>
+	  <form id="formas" action="" autocomplete="off" required>
+	    <input type="text" id="nombre"  placeholder="Nombre:" required><br><br>
+		  <input type="text" id="email"  placeholder="Email:" autocomplete="off" required><br><br>
+		  <input type="tel" id="telefono"  placeholder="Teléfono:" required><br><br>
+		  <textarea id="mensaje" placeholder="Déjanos tu mensaje:" required></textarea><br><br>
+		  <input type="submit" id="enviar" onclick='sendMail()' value="Enviar" />
+    </form>
+	</div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card" style="text-align:center;">
+	  <br><br><br><br>
+	  <h3>Teléfono:  +52 (33)37-72-4996</h3>
+      <h3>Tlajomulco de Zúñiga, Jalisco, México</h3>
+      <h3>alfagreenmx@hotmail.com</h3>
+	</div>
+  </div>
+</div>
+
+
+
+<!-- F O O T E R -->
+<div class="footer">
+  <p style="text-align:center;"> Tlajomulco de Zuñiga, Jalisco, México | +52 (33) 3772 4996</p>
+  <p>© Derechos de Autor 2014 germinados-alfagreen.com.mx</p>
+</div>
+
+
+
+
+</body>
+</html>

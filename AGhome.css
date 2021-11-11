@@ -1,0 +1,190 @@
+* { box-sizing: border-box; }
+
+html {
+  background: url("imagenes/alfalfa2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Calibri, Corbel, Lucida Sans, Bahnschrift, Ebrima;
+
+ }
+
+.header {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: forestgreen;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 40px;
+} 
+
+ .nombre { 
+  font-size: 45px;
+  vertical-align: middle;
+  color: forestgreen;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, 0 0 10px forestgreen;
+}  
+  
+
+.logo {
+  height:80%;
+  max-width:auto;
+  vertical-align: middle;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.icon {
+  position: absolute;
+  float:right;
+  top: 30px;
+  right: 30px;
+  color: blue;
+}
+
+
+a:link, a:visited, a:active {
+  color: blue;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar {
+  max-width:100%;
+  overflow:hidden;
+  background-color: forestgreen;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar a {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  border-right: 1px solid white;
+  transition: 0.5s;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.navbar a:first-child { border-right:none;}
+
+.navbar a:hover {
+  background-color: darkgreen;
+}
+
+/*LEFT COLUMN*/
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+/* RIGHT COLUMN*/
+.rightcolumn {
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+}
+
+/*CLEAR FLOATS AFTER COLUMNS*/
+.row:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.footer { 
+  border: 1px solid green;
+  background-color: #2f4f4f;
+  margin-top:10px;
+  text-align:center;
+  color: #808080;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.card {
+	position: relative;
+	padding: 20px;
+	margin-top: 20px;
+	text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white, 0 0 0.5px white;
+	
+}
+
+.card1 {
+  background-color: rgba(196, 193, 193, 0.3);
+  border-radius: 6px;
+}
+
+.card p {
+	font-size: 20px;
+}
+
+.background {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  
+}  
+	
+.sponsor {
+	margin: 40px 20px;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+  width:90%;
+  height: auto;
+}
+
+.sponsor1 {
+  margin: 40px 20px;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+
+}
+.sponsor img {
+	width: 100%;
+	height: auto;
+  
+
+   
+}
+
+	
+/*RESPONSIBLE LAYOUT SCREEN<800PX*/
+@media screen and (max-width:800px) {
+  .leftcolumn {
+    width:100%; padding: 0;
+	}
+  .rightcolumn {
+    width: 70%; padding: 0; margin-left: 15%; margin-right: 15%;
+	}
+}
+
+/* RESPONSIBLE LAYOUT SCREEN<400PX */
+@media screen and (max-width: 400px) {
+.navbar a { float: none; width: 100%; }
+}

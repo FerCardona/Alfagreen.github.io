@@ -1,0 +1,155 @@
+* { box-sizing: border-box; }
+
+html {
+  background: url(imagenes/germinados.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: Calibri, Corbel, Lucida Sans, Bahnschrift, Ebrima;
+ }
+
+.header {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+  color: forestgreen;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 40px;
+} 
+
+ .nombre { 
+  font-size:45px;
+  vertical-align: middle;
+  color: forestgreen;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, 0 0 10px forestgreen;
+}  
+  
+
+.logo {
+  height:80%;
+  width:auto;
+  vertical-align: middle;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.icon {
+  position: absolute;
+  float:right;
+  top: 30px;
+  right: 30px;
+  color: blue;
+}
+
+
+a:link, a:visited, a:active {
+  color: blue;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar {
+  overflow:hidden;
+  background-color: forestgreen;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar a {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  border-right: 1px solid white;
+  transition: 0.5s;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.navbar a:first-child { border-right:none;}
+
+.navbar a:hover {
+  background-color: darkgreen;
+}
+
+/*LEFT COLUMN*/
+.leftcolumn {
+	float: left;
+	width: 50%;
+	padding-left: 200px;
+}
+
+/* RIGHT COLUMN*/
+.rightcolumn {
+	float: left;
+	width: 50%;
+	
+}
+
+/*CLEAR FLOATS AFTER COLUMNS*/
+.row:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+input, textarea {
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  width: 85%;
+}
+
+button {
+	font-family: Arial;
+	padding: 5px;
+	width: 85%;
+	border-radius: 5px;
+	border: 1px solid grey;
+	box-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey, 0 0 5px black;
+}
+#enviar:hover {
+  background-color:#2f4f4f;
+  color:white;
+}
+
+.footer { 
+  border: 1px solid green;
+  background-color: #2f4f4f;
+  margin-top:10px;
+  margin-bottom:20px;
+  text-align:center;
+  color: #808080;
+  font-size: 12px;
+  padding: 15px;
+}
+.card {
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 10px black;
+}
+textarea {
+  height:100px;
+  resize:none; 
+  font-family:Arial;
+}
+/*RESPONSIBLE LAYOUT SCREEN<800PX*/
+@media screen and (max-width:800px) {
+  .leftcolumn, .rightcolumn {
+    width:100%; padding: 0;
+	}
+}
+
+/* RESPONSIBLE LAYOUT SCREEN<400PX */
+@media screen and (max-width: 400px) {
+.navbar a { float: none; width: 100%; }
+}
