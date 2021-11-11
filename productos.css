@@ -1,10 +1,5 @@
 * { box-sizing: border-box; }
 
-html {
-  background: url(imagenes/alfalfa2.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-
 body {
   font-family: Calibri, Corbel, Lucida Sans, Bahnschrift, Ebrima;
  }
