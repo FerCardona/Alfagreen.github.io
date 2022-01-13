@@ -1,16 +1,7 @@
 * { box-sizing: border-box; }
 
-html {
-  background: url("imagenes/alfalfa2.jpg") no-repeat center center fixed;
-  background-size: cover;
-  z-index: -1;
-  position: absolute;
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: Calibri, Corbel, Lucida Sans, Bahnschrift, Ebrima;
-
  }
 
 .header {
@@ -85,6 +76,11 @@ a:link, a:visited, a:active {
 
 .navbar a:hover {
   background-color: darkgreen;
+}
+.green_img {
+  float: right;
+  width: 50%;
+  margin: 5px;
 }
 
 /*LEFT COLUMN*/
@@ -163,14 +159,10 @@ a:link, a:visited, a:active {
 	justify-content: center;
 	align-items: center;
 	background-color: white;
-
 }
 .sponsor img {
 	width: 100%;
 	height: auto;
-  
-
-   
 }
 
 	
